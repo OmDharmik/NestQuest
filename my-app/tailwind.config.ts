@@ -1,20 +1,40 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      container: {
+        center: true,
+        padding: '1rem',
+      },
+      fontFamily: {
+        sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
+        serif: ['Merriweather', 'Georgia', 'serif'],
+        mono: ['Menlo', 'Monaco', 'Courier New', 'monospace'],
+      },
+      colors: {
+        primaryBackground: '#F5F5F5',
+        accentLight: '#48CFCB',
+        accentDark: '#229799',
+        primaryText: '#424242',
+      },
+      fontSize: {
+        sm: ['0.75rem', { lineHeight: '1rem' }],
+        md: ['2.5rem', { lineHeight: '2.75rem' }],
+        lg: ['5rem', { lineHeight: '5.25rem' }],
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
       },
     },
   },
-  plugins: [],
 };
+
 export default config;
