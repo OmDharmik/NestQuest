@@ -10,7 +10,13 @@ interface NavbarProps {
 const Navbar = () => {
   return (
     <nav className="flex  justify-between p-4 text-primaryText items-center">
-      <Image src={'/Logo.png'} alt={'Logo'} height={50} width={50} />
+      <Image
+        className="ml-8"
+        src={'/Logo.png'}
+        alt={'Logo'}
+        height={50}
+        width={50}
+      />
       <div className="hidden lg:flex justify-center gap-8">
         <Link className="hover:text-black hover:font-semibold" href="/discover">
           Discover
