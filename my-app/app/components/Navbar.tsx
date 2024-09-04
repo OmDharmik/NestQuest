@@ -9,7 +9,7 @@ interface NavbarProps {
 
 const Navbar = () => {
   return (
-    <nav className="flex  justify-between p-4 text-primaryText items-center">
+    <nav className="flex  justify-between p-4 text-primaryText items-center mb-4 border-b">
       <Image
         className="ml-8"
         src={'/Logo.png'}

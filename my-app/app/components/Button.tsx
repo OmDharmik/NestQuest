@@ -4,7 +4,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({ label }) => {
   return (
-    <button className="bg-accentLight rounded-md hover:bg-accentDark py-4 px-8 transition ease-in-out duration-300 mr-8 font-bold">
+    <button className="bg-accentLight rounded-md hover:bg-accentDark py-4 px-8 transition ease-in-out duration-300 mr-8 font-bold delay-50">
       {' '}
       {label}
     </button>

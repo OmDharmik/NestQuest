@@ -37,14 +37,13 @@ const Search = () => {
             placeholder="Add Guests"
           />
         </div>
-        <div className="bg-accentLight p-4 rounded-full hover:bg-accentDark">
+        <div className="bg-accentLight p-4 rounded-full hover:bg-accentDark cursor-pointer">
           <button type="submit" className="flex rounded-full">
             <Image
               src={'/search.svg'}
               alt="search"
               height={30}
               width={30}
-              className="cursor-pointer "
             ></Image>
           </button>
         </div>
