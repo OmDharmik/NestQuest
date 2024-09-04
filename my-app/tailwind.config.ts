@@ -24,7 +24,7 @@ const config: Config = {
         primaryText: '#424242',
       },
       fontSize: {
-        sm: ['0.75rem', { lineHeight: '1rem' }],
+        sm: ['1rem', { lineHeight: '1.25rem' }],
         md: ['2.5rem', { lineHeight: '2.75rem' }],
         lg: ['5rem', { lineHeight: '5.25rem' }],
       },
