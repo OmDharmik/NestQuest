@@ -32,7 +32,7 @@ const Footer = () => {
                   return (
                     <a
                       href="#"
-                      className="text-sm text-gray-500 hover:text-primary"
+                      className="text-sm text-gray-500 hover:text-black"
                     >
                       {link}
                     </a>
