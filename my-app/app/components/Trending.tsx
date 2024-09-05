@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { hotels } from '../utils/constants';
 import LocationCard from './LocationCard';
 
 const Trending = () => {
@@ -18,9 +19,15 @@ const Trending = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 mx-12 mt-8 gap-4">
-        <LocationCard />
-        <LocationCard />
-        <LocationCard />
+        {hotels.map((hotel, index) => (
+          <LocationCard
+            key={index}
+            label={hotel.label}
+            title={hotel.title}
+            description={hotel.description}
+            price={hotel.price}
+          />
+        ))}
       </div>
     </section>
   );
