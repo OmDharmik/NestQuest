@@ -3,6 +3,7 @@ import Hero2 from './components/Hero2';
 import Navbar from './components/Navbar';
 import Search from './components/Search';
 import Trending from './components/Trending';
+import WhyUs from './components/WhyUs';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Search />
         <Hero2 />
         <Trending />
+        <WhyUs />
       </div>
     </>
   );
