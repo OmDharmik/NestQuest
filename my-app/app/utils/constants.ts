@@ -1,17 +1,20 @@
 const hotels = [
   {
+    id: 1,
     title: 'Ocean View Resort',
     description: '1 bed | WiFi | Breakfast | Ocean View | Pool | Spa',
     price: 1500,
     label: '/hero2-1.jpg',
   },
   {
+    id: 2,
     title: 'The Albert',
     description: '2 bed | WiFi | Mountain View | Breakfast | Fireplace',
     price: 2200,
     label: '/hotel-2.jpg',
   },
   {
+    id: 3,
     title: 'The Colony Hotel',
     description: '1 bed | WiFi | City View | Breakfast | Gym | Restaurant',
     price: 1800,

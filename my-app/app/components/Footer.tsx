@@ -23,14 +23,15 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-around p-12">
-        {footerLinks.map((footerLink) => {
+        {footerLinks.map((footerLink, index) => {
           return (
-            <div className="flex flex-col items-center mt-12">
+            <div key={index} className="flex flex-col items-center mt-12">
               <h3 className="text-md font-bold">{footerLink.title}</h3>
               <div className="flex flex-col gap-4 mt-4">
-                {footerLink.links.map((link) => {
+                {footerLink.links.map((link, index) => {
                   return (
                     <a
+                      key={index}
                       href="#"
                       className="text-sm text-gray-500 hover:text-black"
                     >

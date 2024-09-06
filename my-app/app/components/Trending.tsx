@@ -12,16 +12,17 @@ const Trending = () => {
             <Image
               src={'/arrow-right.svg'}
               alt="see more"
-              height={28}
               width={28}
+              height={28}
+              className="object-contain"
             ></Image>
           </button>
         </div>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 mx-12 mt-8 gap-4">
-        {hotels.map((hotel, index) => (
+        {hotels.map((hotel) => (
           <LocationCard
-            key={index}
+            key={hotel.id}
             label={hotel.label}
             title={hotel.title}
             description={hotel.description}

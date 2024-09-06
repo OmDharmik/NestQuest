@@ -7,8 +7,10 @@ const Hero = () => {
         <Image
           src={'/hero.jpg'}
           alt={'Hero Image'}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{
+            objectFit: 'cover',
+          }}
           className="rounded-lg opacity-70"
         />
         <div className="absolute inset-0 bg-black opacity-40 rounded-lg"></div>

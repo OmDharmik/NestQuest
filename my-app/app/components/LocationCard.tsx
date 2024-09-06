@@ -14,14 +14,16 @@ const LocationCard = ({
   price,
 }: LocationCardProps) => {
   return (
-    <a href="/product/1">
+    <a href="/product/">
       <div className="flex flex-col">
         <div className="relative h-80 w-80 rounded-lg overflow-hidden">
           <Image
             src={`${label}`}
             alt="image"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{
+              objectFit: 'cover',
+            }}
           ></Image>
         </div>
         <div className="flex flex-col mt-4">

@@ -42,7 +42,6 @@ const WhyUs = () => {
         <div>
           <div className="flex justify-center mb-8">
             <Image
-              mb-8
               src={'/customer-support.png'}
               alt="24 hr support"
               height={100}
