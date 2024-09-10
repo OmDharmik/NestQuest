@@ -22,7 +22,7 @@ const Footer = () => {
           <Button label="Subscribe"></Button>
         </div>
       </div>
-      <div className="flex justify-around p-12 bg-gray-300">
+      <div className="flex flex-col md:flex-row md:justify-around p-12 bg-gray-300">
         {footerLinks.map((footerLink, index) => {
           return (
             <div key={index} className="flex flex-col items-center mt-12">

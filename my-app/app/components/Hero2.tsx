@@ -10,7 +10,7 @@ const Hero2 = () => {
         Book unforgettable properties and create lasting memories with unique
         accommodations that suit every taste and budget.
       </p>
-      <div className="sm:hidden md:grid md:grid-cols-3 gap-4 mx-16 mt-20 items-center">
+      <div className="grid-cols-2 grid md:grid-cols-3 gap-4 mx-16 mt-20 items-center">
         <div className="flex items-center gap-8 justify-center">
           <div className="relative flex justify-center rounded-full lg:h-[250px] lg:w-[200px] h-[200px] w-[150px] overflow-hidden object-cover">
             <Image
@@ -39,7 +39,7 @@ const Hero2 = () => {
             Epic Moments Await You
           </h2>
         </div>
-        <div className="flex gap-8 items-center justify-center">
+        <div className="flex gap-8 items-center col-span-2 md:col-span-1 justify-center">
           <div className="relative flex justify-center rounded-full lg:h-[250px] lg:w-[200px] h-[200px] w-[150px] overflow-hidden object-cover">
             <Image
               src={'/hero2-3.jpg'}
