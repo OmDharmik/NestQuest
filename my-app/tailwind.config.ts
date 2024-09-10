@@ -7,6 +7,11 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: '576px',
+      md: '960px',
+      lg: '1024px',
+    },
     extend: {
       container: {
         center: true,
@@ -27,11 +32,6 @@ const config: Config = {
         sm: ['1rem', { lineHeight: '1.25rem' }],
         md: ['2.5rem', { lineHeight: '2.75rem' }],
         lg: ['5rem', { lineHeight: '5.25rem' }],
-      },
-      screens: {
-        sm: '640px',
-        md: '768px',
-        lg: '1024px',
       },
     },
   },

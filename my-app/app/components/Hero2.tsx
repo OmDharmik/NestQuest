@@ -10,44 +10,46 @@ const Hero2 = () => {
         Book unforgettable properties and create lasting memories with unique
         accommodations that suit every taste and budget.
       </p>
-      <div className="grid grid-cols-3 gap-4 mx-16 mt-20 items-center">
+      <div className="sm:hidden md:grid md:grid-cols-3 gap-4 mx-16 mt-20 items-center">
         <div className="flex items-center gap-8 justify-center">
-          <div className="flex rounded-full bg-yellow-300 h-[250px] w-[200px] overflow-hidden object-cover">
+          <div className="relative flex justify-center rounded-full lg:h-[250px] lg:w-[200px] h-[200px] w-[150px] overflow-hidden object-cover">
             <Image
               src={'/hero2-1.jpg'}
               alt="hero2"
-              height={250}
-              width={200}
+              fill
+              style={{ objectFit: 'cover' }}
             ></Image>
           </div>
-          <h2 className="flex font-bold text-2xl w-2/5">
+          <h2 className="flex font-bold text-xl lg:text-2xl w-2/5">
             Discover Your Perfect Stay
           </h2>
         </div>
 
         <div className="flex items-center gap-8 justify-center">
-          <div className="flex rounded-full bg-yellow-300 h-[250px] w-[200px] overflow-hidden object-cover">
+          <div className="relative flex justify-center rounded-full lg:h-[250px] lg:w-[200px] h-[200px] w-[150px] overflow-hidden object-cover">
             <Image
               src={'/hero2-2.jpg'}
               alt="hero2"
-              height={250}
-              width={200}
+              fill
+              style={{ objectFit: 'cover' }}
+              className="relative"
             ></Image>
           </div>
-          <h2 className="flex font-bold text-2xl w-2/5">
-            Unforgettable Experiences Await
+          <h2 className="flex font-bold text-xl lg:text-2xl w-2/5">
+            Epic Moments Await You
           </h2>
         </div>
         <div className="flex gap-8 items-center justify-center">
-          <div className="flex justify-center rounded-full bg-yellow-300 h-[250px] w-[200px] overflow-hidden object-cover">
+          <div className="relative flex justify-center rounded-full lg:h-[250px] lg:w-[200px] h-[200px] w-[150px] overflow-hidden object-cover">
             <Image
               src={'/hero2-3.jpg'}
               alt="hero2"
-              height={250}
-              width={200}
+              fill
+              style={{ objectFit: 'cover' }}
+              className="relative"
             ></Image>
           </div>
-          <h2 className="flex font-bold text-2xl w-2/5">
+          <h2 className="flex font-bold text-xl lg:text-2xl w-2/5">
             Stay. Relax. Repeat.
           </h2>
         </div>
