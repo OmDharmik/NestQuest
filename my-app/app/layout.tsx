@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
+import SessionWrapper from './components/SessionWrapper';
 import './globals.css';
 
 const raleway = Raleway({
@@ -18,8 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={raleway.className}>{children}</body>
-    </html>
+    <SessionWrapper>
+      <html lang="en">
+        <body className={raleway.className}>{children}</body>
+      </html>
+    </SessionWrapper>
   );
 }
